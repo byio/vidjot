@@ -1,0 +1,15 @@
+<!-- Passport Error Notifications -->
+{{#if error}}
+<div class="alert alert-danger">
+  {{error}}
+</div>
+{{/if}}
+
+<!-- Server-side Form Validation Errors -->
+{{#each errors}}
+  <div class="alert alert-danger">
+    {{text}}
+  </div>
+{{else}}
+<!-- do nothing -->
+{{/each}}
